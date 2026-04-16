@@ -9,8 +9,9 @@
 
 <div class="container mt-5">
     <div class="card shadow-sm">
-        <div class="card-header bg-primary text-white">
-            <h4>Daftar Event</h4>
+        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+            <h4 class="mb-0">Daftar Event</h4>
+            <a href="/login" class="btn btn-light btn-sm">Login Admin</a>
         </div>
         <div class="card-body">
             <ul class="list-group">

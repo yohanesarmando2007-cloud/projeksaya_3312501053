@@ -11,22 +11,9 @@ class PaymentController extends Controller
     {
         // Data registrasi statis
         $registrations = [
-            1 => [
-                'id' => 1,
-                'registration_number' => 'REG001',
-                'event_name' => 'Seminar AI',
-                'ticket_name' => 'Regular',
-                'price' => 150000,
-                'status' => 'pending',
-            ],
-            2 => [
-                'id' => 2,
-                'registration_number' => 'REG002',
-                'event_name' => 'Workshop Laravel',
-                'ticket_name' => 'VIP',
-                'price' => 300000,
-                'status' => 'pending',
-            ],
+            1 => ['id' => 1, 'registration_number' => 'REG001', 'event_name' => 'Seminar AI', 'ticket_name' => 'Regular', 'price' => 150000, 'status' => 'pending'],
+            2 => ['id' => 2, 'registration_number' => 'REG002', 'event_name' => 'Workshop Laravel', 'ticket_name' => 'VIP', 'price' => 300000, 'status' => 'pending'],
+            3 => ['id' => 3, 'registration_number' => 'REG003', 'event_name' => 'Hackathon Polibatam', 'ticket_name' => 'Regular', 'price' => 120000, 'status' => 'pending'],
         ];
 
         if (!isset($registrations[$registrationId])) {
@@ -51,6 +38,6 @@ class PaymentController extends Controller
         ]);
 
         // Simulasi sukses
-        return redirect('/my-tickets')->with('success', 'Bukti pembayaran berhasil diupload!');
+        return redirect('/event')->with('success', 'Bukti pembayaran berhasil diupload!');
     }
 }

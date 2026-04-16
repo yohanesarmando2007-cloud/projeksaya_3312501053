@@ -23,6 +23,10 @@
                             <label for="password" class="form-label">Password</label>
                             <input type="password" name="password" class="form-control" id="password" required>
                         </div>
+                        <div class="text-left mt-3">
+                            <p>Email = admin@example.com</p>
+                            <p>Password = password</p>
+                        </div>
                         <button type="submit" class="btn btn-primary w-100">Login</button>
                     </form>
                 </div>
